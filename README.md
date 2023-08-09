@@ -17,3 +17,7 @@ A series of apps being powered by AI, incorporating domains on language models a
 -Python
 
 -Flutter
+
+## Apps
+
+-Cat vs Dog Classifier (In progress)
