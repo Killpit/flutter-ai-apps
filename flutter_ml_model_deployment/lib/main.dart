@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const MlModelDeployment());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class MlModelDeployment extends StatelessWidget {
+  const MlModelDeployment({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      
+    );
   }
 }
