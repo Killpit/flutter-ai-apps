@@ -12,6 +12,8 @@ A series of apps being powered by AI, incorporating domains on language models a
 
 -Learning to deploy mobile apps that can be market ready.
 
+-Learning to deploy ML models on Flutter
+
 ## Tech Stack
 
 -Python
@@ -21,3 +23,5 @@ A series of apps being powered by AI, incorporating domains on language models a
 ## Apps
 
 -Cat vs Dog Classifier (In progress)
+
+-Flutter ML App Deployment (In progress)
