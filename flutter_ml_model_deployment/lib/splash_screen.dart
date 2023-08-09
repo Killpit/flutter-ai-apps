@@ -19,7 +19,8 @@ class _SplashScreen extends State<SplashScreen> {
           systemNavigationBarColor: Colors.white,
         ),
         backgroundColor: Colors.blue,
-      ),
+        elevation: 0,),
+      body: Center(),
     );
   }
 
