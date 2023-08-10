@@ -9,7 +9,8 @@ class _MlModel extends State<MlModel> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
+      backgroundColor: Colors.black,
+      extendBody: true,
       appBar: AppBar(
         backgroundColor: Colors.pink,
         title: Text('ML model deployment with Flutter',),
