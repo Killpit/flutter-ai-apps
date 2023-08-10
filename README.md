@@ -14,6 +14,10 @@ A series of apps being powered by AI, incorporating domains on language models a
 
 -Learning to deploy ML models on Flutter
 
+-Learning to work with the newer versions of older packages
+
+-Learning to work with new packages
+
 ## Tech Stack
 
 -Python
