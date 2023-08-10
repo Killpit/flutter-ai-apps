@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -9,6 +11,15 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreen extends State<SplashScreen> {
+  var _time;
+  start() {
+    _time = Timer(Duration(seconds: 6), call);
+  }
+
+  void call() {
+    
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
