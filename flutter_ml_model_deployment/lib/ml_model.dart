@@ -21,6 +21,18 @@ class _MlModel extends State<MlModel> {
       body: SizedBox(
         height: screenHeight,
         width: screenWidth,
+        child: Stack(
+          children: [
+            Container(
+              height: 166,
+              width: 166,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: Colors.pink,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
