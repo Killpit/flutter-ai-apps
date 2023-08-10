@@ -8,6 +8,9 @@ class MlModel extends StatefulWidget {
 class _MlModel extends State<MlModel> {
   @override
   Widget build(BuildContext context) {
+    final screenHeight = MediaQuery.of(context).size.height;
+    final screenWidth = MediaQuery.of(context).size.width;
+
     return Scaffold(
       backgroundColor: Colors.black,
       extendBody: true,
@@ -15,7 +18,10 @@ class _MlModel extends State<MlModel> {
         backgroundColor: Colors.pink,
         title: Text('ML model deployment with Flutter',),
       ),
-      body: Center(child: Text('ML with Flutter')),
+      body: SizedBox(
+        height: screenHeight,
+        width: screenWidth,
+      ),
     );
   }
 }
