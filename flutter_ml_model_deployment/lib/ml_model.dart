@@ -2,9 +2,12 @@ import 'package:flutter/material.dart';
 
 class MlModel extends StatefulWidget {
   @override
-  State<StatefulWidget> createState() {
-    // TODO: implement createState
+  State<MlModel> createState() => _MlModel(); 
+}
+
+class _MlModel extends State<MlModel> {
+  @override
+  Widget build(BuildContext context) {
     throw UnimplementedError();
   }
-
 }
