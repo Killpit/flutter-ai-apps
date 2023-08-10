@@ -11,7 +11,7 @@ class _MlModel extends State<MlModel> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.pink,
-        title: Text('ML model deployment with Flutter')
+        title: Text('ML model deployment with Flutter',),
       ),
     );
   }
