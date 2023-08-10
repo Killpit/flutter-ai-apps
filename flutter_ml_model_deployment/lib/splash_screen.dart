@@ -21,7 +21,7 @@ class _SplashScreen extends State<SplashScreen> {
         ),
         backgroundColor: Colors.blue,
         elevation: 0,),
-      body: Center(),
+      body: Center(child: Lottie.network('https://lottie.host/0156a637-e424-4875-afe4-efccf0a97889/ORoffsBONv.json')),
     );
   }
 
