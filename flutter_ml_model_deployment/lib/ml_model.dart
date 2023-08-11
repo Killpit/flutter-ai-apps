@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 class MlModel extends StatefulWidget {
@@ -23,14 +25,24 @@ class _MlModel extends State<MlModel> {
         width: screenWidth,
         child: Stack(
           children: [
-            Container(
-              height: 166,
-              width: 166,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                color: Colors.pink,
-              ),
-            ),
+            Positioned(
+              top: screenHeight*0.1,
+              left: -88,
+              child: Container(
+                height: 166,
+                width: 166, 
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: Colors.pink,
+                ),
+                child: BackdropFilter(
+                  filter: ImageFilter.blur(
+                    sigmaX: 200,
+                    sigmaY: 200,
+                  )
+                )
+              )
+            )
           ],
         ),
       ),
