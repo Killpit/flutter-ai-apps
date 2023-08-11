@@ -39,7 +39,18 @@ class _MlModel extends State<MlModel> {
                   filter: ImageFilter.blur(
                     sigmaX: 200,
                     sigmaY: 200,
-                  )
+                  ),
+                ),
+              ),
+            ),
+            Positioned(
+              top: screenHeight * 0.3,
+              right: -100,
+              child: Container(
+                height: 200,
+                width: 200,
+                decoration: const BoxDecoration(
+                  
                 )
               )
             )
