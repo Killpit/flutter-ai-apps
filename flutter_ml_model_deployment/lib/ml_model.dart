@@ -50,9 +50,34 @@ class _MlModel extends State<MlModel> {
                 height: 200,
                 width: 200,
                 decoration: const BoxDecoration(
-                  
-                )
-              )
+                  shape: BoxShape.circle,
+                  color: Colors.green,
+                ),
+                child: BackdropFilter(
+                  filter: ImageFilter.blur(
+                    sigmaX: 200,
+                    sigmaY: 200,
+                  ),
+                  child: Container(
+                    height: 200,
+                    width: 200,
+                    color: Colors.transparent,
+                  ),
+                ),
+              ),
+            ),
+            SafeArea(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  SizedBox(height: screenHeight * 0.05,),
+                  OutlinedButton(onPressed: () {  },
+                  child: null,
+
+                  )
+                ]
+              ),
             )
           ],
         ),
