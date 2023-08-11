@@ -71,11 +71,8 @@ class _MlModel extends State<MlModel> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  SizedBox(height: screenHeight * 0.05,),
-                  OutlinedButton(onPressed: () {  },
-                  child: null,
-
-                  )
+                  SizedBox(height: screenHeight*0.05,),
+                  
                 ]
               ),
             )
