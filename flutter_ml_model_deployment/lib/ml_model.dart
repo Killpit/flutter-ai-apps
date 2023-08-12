@@ -1,7 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
 import 'dart:ui';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_ml_model_deployment/custom_outline.dart';
@@ -9,13 +8,9 @@ import 'package:image_picker/image_picker.dart';
 import 'package:http/http.dart' as http;
 
 //https://intel-classfier-production.up.railway.app/predictApi
-class MlModel extends StatefulWidget
-{
+class MlModel extends StatefulWidget {
   @override
-  State<MlModel> createState()=>_MlModel();
-
-
-}
+  State<MlModel> createState()=>_MlModel();}
 
 class _MlModel extends State<MlModel> {
   String? result;
@@ -28,8 +23,7 @@ class _MlModel extends State<MlModel> {
       img=File(pickedFile!.path);
     });
   }
-  upload()async
-  {
+  upload() async {
     final request=http.MultipartRequest("POST",Uri.parse(url));
     final header={"Content_type": "multipart/form-data"};
     request.files.add(http.MultipartFile('fileup',img!.readAsBytes().asStream(),img!.lengthSync(),
@@ -41,14 +35,11 @@ class _MlModel extends State<MlModel> {
       final resJson=jsonDecode(res.body);
       print("response here: $resJson");
       result=resJson['prediction'];
-    }else
-      {
+    } else {
         print("Error ${myRequest.statusCode}");
       }
 
-    setState(() {
-
-    });
+    setState(() {});
 
   }
   @override
@@ -171,8 +162,7 @@ class _MlModel extends State<MlModel> {
            Text('Result from Model Ml: $result',textAlign: TextAlign.center,
              style: TextStyle(color: Colors.white.withOpacity(0.85,),fontSize: screenHeight<= 667 ? 18 : 34,
                fontWeight: FontWeight.w700,),
-           )
-
+           ),
          ),
          SizedBox(height: screenHeight*0.03,),
          CustomOutline(
@@ -254,9 +244,10 @@ class _MlModel extends State<MlModel> {
            ),
          ),
        ],
-     ),),
-    ]
-   ),
+     ),
+    ),
+  ],
+),
       ),
     );
   }
