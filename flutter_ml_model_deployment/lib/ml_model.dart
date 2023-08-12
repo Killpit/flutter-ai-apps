@@ -23,7 +23,7 @@ class _MlModel extends State<MlModel> {
   File? img;
   var url="https://intel-classfier-production.up.railway.app/predictApi";
   Future pickImage() async{
-    PickedFile? pickedFile=await picker.getImage(source: ImageSource.gallery,);
+    PickedFile? pickedFile=(await picker.pickImage(source: ImageSource.gallery,)) as PickedFile?;
     setState(() {
       img=File(pickedFile!.path);
     });
@@ -242,11 +242,9 @@ class _MlModel extends State<MlModel> {
              child:ElevatedButton(
                style: ButtonStyle(
                  backgroundColor: MaterialStateProperty.all(Colors.white12,),
-
                ),
                onPressed: (){
                  upload();
-
                },
                child: Text('Upload Image',style: TextStyle(
                  fontSize: 14,
