@@ -12,7 +12,9 @@ class _MySplashState extends State<MySplash> {
     return AnimatedSplashScreen(
       splash: Icons.home, 
       nextScreen: MainScreen(), 
-      duration: 2000);
+      duration: 2000,
+      disableNavigation: false,
+    );
   }
 }
 
