@@ -14,6 +14,7 @@ class _MySplashState extends State<MySplash> {
       nextScreen: MainScreen(), 
       duration: 2000,
       disableNavigation: false,
+      splashTransition: SplashTransition.slideTransition,
     );
   }
 }
