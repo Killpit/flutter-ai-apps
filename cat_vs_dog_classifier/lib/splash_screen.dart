@@ -14,7 +14,7 @@ class _MySplashState extends State<MySplash> {
       nextScreen: MainScreen(), 
       duration: 2000,
       disableNavigation: false,
-      splashTransition: SplashTransition.slideTransition,
+      splashTransition: SplashTransition.slideTransition, 
     );
   }
 }
@@ -22,8 +22,9 @@ class _MySplashState extends State<MySplash> {
 class MainScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return MaterialApp(
       color: Colors.red,
+      title: "Dog vs Cat Classifier",
     );
 }
 }
