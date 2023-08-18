@@ -24,7 +24,22 @@ class MainScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       color: Colors.red,
-      title: "Dog vs Cat Classifier",
+      title: ("Dog vs Cat Classifier"),
     );
 }
+}
+
+class Style extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+        child: Text(
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 30,
+            color: Colors.black
+          )
+        ),
+    );
+  }
 }
