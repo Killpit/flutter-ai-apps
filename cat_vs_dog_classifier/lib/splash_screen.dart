@@ -9,6 +9,18 @@ class MySplash extends StatefulWidget {
 class _MySplashState extends State<MySplash> {
   @override
   Widget build(BuildContext context) {
-    return AnimatedSplashScreen(splash: splash, nextScreen: nextScreen);
+    return AnimatedSplashScreen(
+      splash: Icons.home, 
+      nextScreen: MainScreen(), 
+      duration: 2000);
   }
+}
+
+class MainScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      color: Colors.red,
+    );
+}
 }
